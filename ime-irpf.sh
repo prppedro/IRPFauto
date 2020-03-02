@@ -10,5 +10,5 @@ unzip IRPF2020-1.2.zip
 mv icone_irpf.svg IRPF2020
 # Contrib. do ~hcabral
 sed -s "s/~/$(echo $HOME | sed 's/\//\\\//g')/g" irpf2020.desktop > a.tmp
-mv a.tmp $(xdg-user-dir DESKTOP)/irpf2020.desktop
-chmod +x $(xdg-user-dir DESKTOP)/irpf2020.desktop
+mv a.tmp "$(xdg-user-dir DESKTOP)/irpf2020.desktop"
+chmod +x "$(xdg-user-dir DESKTOP)/irpf2020.desktop"
